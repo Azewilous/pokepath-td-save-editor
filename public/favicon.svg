@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="ball"><circle cx="16" cy="16" r="13.5"/></clipPath>
+  </defs>
+
+  <!-- top half (black) -->
+  <rect x="2" y="2" width="28" height="14" fill="#070a10" clip-path="url(#ball)"/>
+
+  <!-- bottom half (gold) -->
+  <rect x="2" y="16" width="28" height="14" fill="#c89800" clip-path="url(#ball)"/>
+
+  <!-- crescent moon: gold circle with dark cutout offset -->
+  <circle cx="13.5" cy="10" r="5.5" fill="#e8b400" clip-path="url(#ball)"/>
+  <circle cx="16.5" cy="8"  r="5.5" fill="#070a10" clip-path="url(#ball)"/>
+
+  <!-- band -->
+  <rect x="2" y="14" width="28" height="4" fill="#0f0e00" clip-path="url(#ball)"/>
+
+  <!-- outer border -->
+  <circle cx="16" cy="16" r="13.5" fill="none" stroke="#3a3010" stroke-width="2"/>
+
+  <!-- center button -->
+  <circle cx="16" cy="16" r="3.5" fill="#e8b400" stroke="#0f0e00" stroke-width="1.5"/>
+</svg>

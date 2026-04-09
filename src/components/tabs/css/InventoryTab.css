@@ -1,0 +1,128 @@
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3px;
+}
+
+.inv-slot {
+  aspect-ratio: 1;
+  border-radius: 2px;
+  position: relative;
+}
+
+.inv-slot.empty {
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.inv-slot.filled {
+  background: var(--bg);
+  border: 1px solid var(--border-glow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 3px;
+  overflow: hidden;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.inv-slot.filled:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 8px rgba(0, 200, 240, 0.15);
+}
+
+.inv-sprite {
+  width: 60%;
+  height: auto;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.inv-ball {
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1.5px solid #3a3010;
+  background:
+    radial-gradient(circle 31% at 51.6% 25%, #070a10 99%, transparent 100%),
+    radial-gradient(circle 31% at 42.2% 31.3%, #e8b400 99%, transparent 100%),
+    linear-gradient(to bottom, #070a10 50%, #c89800 50%);
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  opacity: 0.35;
+}
+.inv-ball::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: calc(50% - 1px);
+  height: 1.5px;
+  background: #1a1400;
+  z-index: 2;
+}
+.inv-ball::after {
+  content: '';
+  position: absolute;
+  width: 28%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #e8b400;
+  border: 1px solid #1a1400;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.inv-name {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.52rem;
+  color: var(--text);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.inv-equipped {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.46rem;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.inv-remove {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 13px;
+  height: 13px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 2px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.1s;
+}
+.inv-slot.filled:hover .inv-remove {
+  display: flex;
+}
+.inv-remove:hover {
+  color: #ff4455;
+}
+
+.inv-add-row {
+  margin-top: 0.75rem;
+  max-width: 260px;
+}

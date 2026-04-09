@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Exo+2:wght@300;400;600&display=swap');
+@import './styles/shared.css';
+
+/* ── Reset / base ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #06080f;
+  --surface: #0b1120;
+  --surface-2: #101828;
+  --border: #0e1c30;
+  --border-glow: #1a4060;
+  --accent: #00c8f0;
+  --accent-light: #4adcff;
+  --accent-dim: #003a50;
+  --accent-dark: #005878;
+  --text: #edf5fc;
+  --text-muted: #7fa8c0;
+  --white: #ffffff;
+  --black: #000000;
+  --radius: 4px;
+}
+
+/* ── Circuit grid background ──────────────────────────────── */
+body {
+  font-family: 'Exo 2', 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(0, 200, 240, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 240, 0.028) 1px, transparent 1px);
+  background-size: 48px 48px;
+  color: var(--text);
+  min-height: 100vh;
+}

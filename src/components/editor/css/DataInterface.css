@@ -1,0 +1,112 @@
+.editor-section {
+  max-width: 760px;
+  margin: 0 auto 6rem;
+  padding: 2.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-glow);
+  position: relative;
+  box-shadow:
+    0 0 40px rgba(0, 200, 240, 0.06),
+    inset 0 1px 0 rgba(0, 200, 240, 0.06);
+}
+
+.editor-section::before,
+.editor-section::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--accent);
+  border-style: solid;
+}
+.editor-section::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+.editor-section::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+.editor-section h2 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 0 10px rgba(0, 200, 240, 0.4);
+}
+
+.editor-section > p {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.save-input {
+  width: 100%;
+  background: var(--bg);
+  color: var(--accent-light);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  padding: 1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.88rem;
+  resize: vertical;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  line-height: 1.7;
+}
+.save-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 2px var(--accent-dim),
+    0 0 16px rgba(0, 200, 240, 0.15);
+}
+.save-input::placeholder {
+  color: #304050;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.upload-btn {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--text);
+  padding: 0.72rem 1.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-glow);
+  cursor: pointer;
+  display: inline-block;
+  transition:
+    border-color 0.15s,
+    color 0.15s,
+    box-shadow 0.15s,
+    background 0.15s;
+}
+.upload-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+  background: var(--accent-dim);
+  box-shadow: 0 0 10px rgba(0, 200, 240, 0.2);
+}

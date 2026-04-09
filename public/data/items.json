@@ -1,0 +1,572 @@
+[
+  {
+    "name": "Rare Bone",
+    "effect": "Special",
+    "price": 1,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/rare-bone.png"
+  },
+  {
+    "name": "Ring Target",
+    "effect": "Special",
+    "price": 1,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/ring-target.png"
+  },
+  {
+    "name": "Slowpoke Tail",
+    "effect": "Special",
+    "price": 1,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/slowpoke-tail.png"
+  },
+  {
+    "name": "Tiny Mushroom",
+    "effect": "Special",
+    "price": 1,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/tiny-mushroom.png"
+  },
+  {
+    "name": "Ancient Shield",
+    "effect": "Mixed",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/rusted-shield.png"
+  },
+  {
+    "name": "Assault Vest",
+    "effect": "Special",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/assault-vest.png"
+  },
+  {
+    "name": "Black Glasses",
+    "effect": "Special",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/black-glasses.png"
+  },
+  {
+    "name": "Cherry Blossom",
+    "effect": "Special",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/petal-pink.png"
+  },
+  {
+    "name": "Clover",
+    "effect": "Critical",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/clover-sweet.png"
+  },
+  {
+    "name": "Dire Hit",
+    "effect": "Critical",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/dire-hit.png"
+  },
+  {
+    "name": "Magnet",
+    "effect": "Special",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/magnet.png"
+  },
+  {
+    "name": "Muscle Band",
+    "effect": "Recharge",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/muscle-band.png"
+  },
+  {
+    "name": "Stretchy Spring",
+    "effect": "Special",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/stretchy-spring.png"
+  },
+  {
+    "name": "Weakness Policy",
+    "effect": "Power",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/weakness-policy.png"
+  },
+  {
+    "name": "Wrestling Mask",
+    "effect": "Mixed",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/professors-mask.png"
+  },
+  {
+    "name": "X-Attack",
+    "effect": "Power",
+    "price": 2,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/x-attack.png"
+  },
+  {
+    "name": "Ancient Sword",
+    "effect": "Mixed",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/rusted-sword.png"
+  },
+  {
+    "name": "Binding Band",
+    "effect": "Recharge",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/binding-band.png"
+  },
+  {
+    "name": "Condensed Blizzard",
+    "effect": "Range",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/casteliacone.png"
+  },
+  {
+    "name": "Focus Band",
+    "effect": "Mixed",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/focus-band.png"
+  },
+  {
+    "name": "Hiking Kit",
+    "effect": "Special",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/camping-gear.png"
+  },
+  {
+    "name": "Inverter",
+    "effect": "Mixed",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/inverter.png"
+  },
+  {
+    "name": "Leftovers",
+    "effect": "Special",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/leftovers.png"
+  },
+  {
+    "name": "Lit Coal",
+    "effect": "Special",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/charcoal.png"
+  },
+  {
+    "name": "Magmarizer",
+    "effect": "Special",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/magmarizer.png"
+  },
+  {
+    "name": "Spinda's Special Delivery",
+    "effect": "Special",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/parcel.png"
+  },
+  {
+    "name": "Subwoofer",
+    "effect": "Special",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/medal-box.png"
+  },
+  {
+    "name": "Sunflower Petal",
+    "effect": "Range",
+    "price": 5,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/petal-yellow.png"
+  },
+  {
+    "name": "Carbos",
+    "effect": "Recharge",
+    "price": 9800,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/carbos.png"
+  },
+  {
+    "name": "Protein",
+    "effect": "Power",
+    "price": 9800,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/protein.png"
+  },
+  {
+    "name": "Life Orb",
+    "effect": "Mixed",
+    "price": 15000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/life-orb.png"
+  },
+  {
+    "name": "Light Clay",
+    "effect": "Special",
+    "price": 20000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/light-clay.png"
+  },
+  {
+    "name": "Twisted Spoon",
+    "effect": "Special",
+    "price": 20000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/twisted-spoon.png"
+  },
+  {
+    "name": "Amulet Coin",
+    "effect": "Special",
+    "price": 25000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/amulet-coin.png"
+  },
+  {
+    "name": "Clefairy Doll",
+    "effect": "Special",
+    "price": 25000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/poke-doll.png"
+  },
+  {
+    "name": "Fertiliser",
+    "effect": "Special",
+    "price": 25000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/rich.png"
+  },
+  {
+    "name": "Air Balloon",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/air-balloon.png"
+  },
+  {
+    "name": "Cell Battery",
+    "effect": "Power",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/cell-battery.png"
+  },
+  {
+    "name": "Choice Scarf",
+    "effect": "Recharge",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/choice-scarf.png"
+  },
+  {
+    "name": "Damp Mulch",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/damp.png"
+  },
+  {
+    "name": "Electirizer",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/electirizer.png"
+  },
+  {
+    "name": "Heart Scale",
+    "effect": "Recharge",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/heart-scale.png"
+  },
+  {
+    "name": "Heat Rock",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/heat-rock.png"
+  },
+  {
+    "name": "Heavy-Duty Boots",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/heavy-duty-boots.png"
+  },
+  {
+    "name": "Leek",
+    "effect": "Critical",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/leek.png"
+  },
+  {
+    "name": "Old Rod",
+    "effect": "Range",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/old-rod.png"
+  },
+  {
+    "name": "Shell Bell",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/shell-bell.png"
+  },
+  {
+    "name": "Shield Breaker Bullet",
+    "effect": "Mixed",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/iron-ball.png"
+  },
+  {
+    "name": "Soft Sand",
+    "effect": "Power",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/soft-sand.png"
+  },
+  {
+    "name": "Squirt Bottle",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/squirt-bottle.png"
+  },
+  {
+    "name": "Star Candy",
+    "effect": "Range",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/star-sweet.png"
+  },
+  {
+    "name": "Sticky Barb",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/sticky-barb.png"
+  },
+  {
+    "name": "Wide Lens",
+    "effect": "Special",
+    "price": 50000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/wide-lens.png"
+  },
+  {
+    "name": "Light Ball",
+    "effect": "Power",
+    "price": 75000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/light-ball.png"
+  },
+  {
+    "name": "Nanab Berry",
+    "effect": "Mixed",
+    "price": 75000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/nanab-berry.png"
+  },
+  {
+    "name": "Thick Club",
+    "effect": "Power",
+    "price": 75000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/thick-club.png"
+  },
+  {
+    "name": "Big Root",
+    "effect": "Special",
+    "price": 80000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/big-root.png"
+  },
+  {
+    "name": "Claw Fossil",
+    "effect": "Power",
+    "price": 100000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/claw.png"
+  },
+  {
+    "name": "Razor Claw",
+    "effect": "Special",
+    "price": 100000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/razor-claw.png"
+  },
+  {
+    "name": "Sharp Beak",
+    "effect": "Power",
+    "price": 100000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/sharp-beak.png"
+  },
+  {
+    "name": "Sniper Scope",
+    "effect": "Power",
+    "price": 100000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/scope-lens.png"
+  },
+  {
+    "name": "Spell Tag",
+    "effect": "Special",
+    "price": 100000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/spell-tag.png"
+  },
+  {
+    "name": "Sprayduck",
+    "effect": "Special",
+    "price": 100000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/sprayduck.png"
+  },
+  {
+    "name": "Loaded Dice",
+    "effect": "Power",
+    "price": 123456,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/loaded-dice.png"
+  },
+  {
+    "name": "Berry Juice",
+    "effect": "Special",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/berry-juice.png"
+  },
+  {
+    "name": "Dome Fossil",
+    "effect": "Critical",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/dome.png"
+  },
+  {
+    "name": "Hard Stone",
+    "effect": "Power",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/hard-stone.png"
+  },
+  {
+    "name": "Metal Powder",
+    "effect": "Mixed",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/metal-powder.png"
+  },
+  {
+    "name": "Quick Powder",
+    "effect": "Mixed",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/quick-powder.png"
+  },
+  {
+    "name": "Rocky Helmet",
+    "effect": "Special",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/rocky-helmet.png"
+  },
+  {
+    "name": "Star Piece",
+    "effect": "Special",
+    "price": 150000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/star-piece.png"
+  },
+  {
+    "name": "Blue Bandana",
+    "effect": "Power",
+    "price": 175000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/blue.png"
+  },
+  {
+    "name": "Adrenaline Orb",
+    "effect": "Recharge",
+    "price": 200000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/adrenaline-orb.png"
+  },
+  {
+    "name": "Metronome",
+    "effect": "Special",
+    "price": 200000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/metronome.png"
+  },
+  {
+    "name": "Strange Idol",
+    "effect": "Power",
+    "price": 200000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/strange-idol.png"
+  },
+  {
+    "name": "Zoom Lens",
+    "effect": "Power",
+    "price": 200000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/zoom-lens.png"
+  },
+  {
+    "name": "Dragon Fang",
+    "effect": "Special",
+    "price": 250000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/dragon-fang.png"
+  },
+  {
+    "name": "Helix Fossil",
+    "effect": "Range",
+    "price": 250000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/helix.png"
+  },
+  {
+    "name": "Spinda Cocktail",
+    "effect": "Range",
+    "price": 250000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/spinda-cocktail.png"
+  },
+  {
+    "name": "Eject Button",
+    "effect": "Special",
+    "price": 300000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/eject-button.png"
+  },
+  {
+    "name": "Nightmare Cloth",
+    "effect": "Special",
+    "price": 300000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/nightmare-cloth.png"
+  },
+  {
+    "name": "Poison Barb",
+    "effect": "Recharge",
+    "price": 400000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/poison-barb.png"
+  },
+  {
+    "name": "Quick Claw",
+    "effect": "Mixed",
+    "price": 500000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/quick-claw.png"
+  },
+  {
+    "name": "Revelation Aroma",
+    "effect": "Range",
+    "price": 500000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/flower-sweet.png"
+  },
+  {
+    "name": "Silph Scope",
+    "effect": "Mixed",
+    "price": 500000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/silph-scope.png"
+  },
+  {
+    "name": "Flame Orb",
+    "effect": "Special",
+    "price": 600000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/flame-orb.png"
+  },
+  {
+    "name": "Badge Of Honor",
+    "effect": "Power",
+    "price": 900000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/honor-of-kalos.png"
+  },
+  {
+    "name": "Toxic Orb",
+    "effect": "Special",
+    "price": 1000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/toxic-orb.png"
+  },
+  {
+    "name": "Absolite",
+    "effect": "Special",
+    "price": 100000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/absolite.png"
+  },
+  {
+    "name": "Alakazite",
+    "effect": "Special",
+    "price": 100000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/alakazite.png"
+  },
+  {
+    "name": "Charizardite X",
+    "effect": "Special",
+    "price": 100000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/charizardite-x.png"
+  },
+  {
+    "name": "Sceptilite",
+    "effect": "Special",
+    "price": 100000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/sceptilite.png"
+  },
+  {
+    "name": "Segmental's Bicycle",
+    "effect": "Mixed",
+    "price": 1000000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/bicycle.png"
+  },
+  {
+    "name": "Shiny Charm",
+    "effect": "Special",
+    "price": 1000000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/shiny-charm.png"
+  },
+  {
+    "name": "Gimmighoul",
+    "effect": "Special",
+    "price": 10000000000,
+    "imgSrc": "https://pokepath.gg/assets/game/images/items/gimmighoul.png"
+  }
+]

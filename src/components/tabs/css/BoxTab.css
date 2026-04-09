@@ -1,0 +1,7 @@
+.pokemon-grid.compact {
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+}
+
+.pokemon-card.compact .card-fields {
+  flex-direction: row;
+}

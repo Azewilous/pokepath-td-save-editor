@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  background: rgba(11, 17, 32, 0.92);
+  border-bottom: 1px solid var(--border-glow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 24px rgba(0, 200, 240, 0.08);
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(0, 200, 240, 0.6);
+}
+
+.navbar-end {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.version-label {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.version-select {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+  appearance: none;
+  padding-right: 1.4rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2300c8f0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+}
+.version-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-dim);
+}
+.version-select option {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.nav-link {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.nav-link:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(0, 200, 240, 0.35);
+  color: var(--white);
+}
+
+/* ── Moon Ball (mini, navbar) ─────────────────────────────── */
+.pokeball-mini {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #3a3010;
+  background:
+    radial-gradient(circle 3.1px at 51.6% 25%, #070a10 99%, transparent 100%),
+    radial-gradient(circle 3.1px at 42.2% 31.3%, #e8b400 99%, transparent 100%),
+    linear-gradient(to bottom, #070a10 50%, #c89800 50%);
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.pokeball-mini::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(50% - 1px);
+  height: 2px;
+  background: #1a1400;
+  z-index: 2;
+}
+.pokeball-mini::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e8b400;
+  border: 1px solid #1a1400;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  box-shadow:
+    0 0 5px #e8b400,
+    0 0 10px rgba(232, 180, 0, 0.6);
+}

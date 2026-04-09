@@ -1,0 +1,272 @@
+/* ── CTA button ───────────────────────────────────────────── */
+.cta-btn {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.75rem 1.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition:
+    color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+  box-shadow:
+    0 0 12px rgba(0, 200, 240, 0.2),
+    inset 0 0 12px rgba(0, 200, 240, 0.05);
+}
+.cta-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+  z-index: -1;
+}
+.cta-btn:hover {
+  color: var(--bg);
+  box-shadow: 0 0 24px rgba(0, 200, 240, 0.55);
+}
+.cta-btn:hover::before {
+  transform: scaleX(1);
+}
+.cta-btn:active {
+  opacity: 0.8;
+}
+.cta-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ── Panel group (labelled card) ────────────────────────── */
+.panel-group {
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+}
+.panel-group:last-child {
+  margin-bottom: 0;
+}
+
+.panel-group.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.group-label {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.label-hint {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* ── Shared field ────────────────────────────────────────── */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.field label {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.field input,
+.field select {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.5rem;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.92rem;
+  width: 100%;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-dim);
+}
+.field select {
+  cursor: pointer;
+}
+
+/* ── Fields row (horizontal flex) ───────────────────────── */
+.fields-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.fields-row .field {
+  flex: 1 1 120px;
+}
+
+/* ── Toggle checkboxes ───────────────────────────────────── */
+.toggle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  font-family: 'Exo 2', sans-serif;
+  text-transform: capitalize;
+  transition: color 0.15s;
+}
+.toggle-label:hover {
+  color: var(--text);
+}
+.toggle-label input[type='checkbox'] {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-glow);
+  border-radius: 2px;
+  background: var(--bg);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+}
+.toggle-label input[type='checkbox']:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.toggle-label input[type='checkbox']:checked::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  width: 5px;
+  height: 8px;
+  border: 2px solid var(--bg);
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+.toggle-label.centered {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* ── Pokémon cards (team / box) ──────────────────────────── */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.pokemon-card {
+  background: var(--bg);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.pokemon-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(0, 200, 240, 0.12);
+}
+.pokemon-card.add-card {
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-family: 'Exo 2', sans-serif;
+  cursor: pointer;
+  min-height: 80px;
+}
+.pokemon-card.add-card:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.card-slot {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.62rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+.card-species {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.card-item label {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.card-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.card-toggles .toggle-label {
+  font-size: 0.76rem;
+}

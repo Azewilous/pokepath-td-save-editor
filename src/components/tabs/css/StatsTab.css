@@ -1,0 +1,55 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.5rem;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.4rem 0.75rem;
+}
+
+.stat-label {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+.stat-input {
+  background: transparent;
+  border: none;
+  color: var(--accent-light);
+  font-family: 'Exo 2', monospace;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.stat-input:focus {
+  outline: none;
+  color: var(--white);
+}
+
+.species-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.species-tag {
+  font-size: 0.78rem;
+  font-family: 'Exo 2', sans-serif;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.15rem 0.5rem;
+  text-transform: capitalize;
+}
