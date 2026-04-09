@@ -16,8 +16,8 @@ describe("AchievementsTab", () => {
     expect(screen.getByText(/coming soon/i)).toBeInTheDocument();
   });
 
-  it("renders the under construction message", () => {
+  it("renders the achievement editing message", () => {
     renderTab();
-    expect(screen.getByText(/under construction/i)).toBeInTheDocument();
+    expect(screen.getByText(/achievement editing is being worked/i)).toBeInTheDocument();
   });
 });
