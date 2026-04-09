@@ -15,7 +15,7 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
-    reporters: ["html"],
+    reporters: process.env.CI ? ["verbose"] : ["verbose", "html"],
     coverage: {
       provider: "v8",
       include: ["src/**/*.{ts,tsx}"],
