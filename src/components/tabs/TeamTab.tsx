@@ -17,7 +17,8 @@ const TARGET_MODES: TargetMode[] = [
   'lowHP',
 ];
 
-const fetchItems = (): Promise<GameItem[]> => fetch('/data/items.json').then((r) => r.json());
+const fetchItems = (): Promise<GameItem[]> =>
+  fetch(`${import.meta.env.BASE_URL}data/items.json`).then((r) => r.json());
 
 interface Props {
   store: { data: SaveData };
