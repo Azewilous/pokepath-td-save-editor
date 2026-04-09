@@ -1,43 +1,126 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, fireEvent } from "@solidjs/testing-library";
 import IndexPage from "~/routes/index";
-import { encodeSaveData, mockSaveData } from "~/test/fixtures";
+import { encodeSaveData, decodeSaveData, mockSaveData } from "~/test/fixtures";
+import type { SaveData } from "~/types/save";
 
-// jsdom doesn't implement URL.createObjectURL
 URL.createObjectURL = vi.fn(() => "blob:mock");
 URL.revokeObjectURL = vi.fn();
 
-describe("IndexPage", () => {
-  it("renders the navbar, hero, and footer", () => {
-    render(() => <IndexPage />);
-    expect(screen.getByText(/Pokepath TD Editor/i)).toBeInTheDocument(); // navbar
-    expect(screen.getByText(/Access · Decrypt/i)).toBeInTheDocument();   // hero subtitle
-    expect(screen.getByText(/support the original creator/i)).toBeInTheDocument(); // footer
+/** Intercept the Blob constructor to capture whatever text the app exports */
+let lastExportedContent = "";
+const OriginalBlob = global.Blob;
+global.Blob = class extends OriginalBlob {
+  constructor(parts: BlobPart[], options?: BlobPropertyBag) {
+    super(parts, options);
+    lastExportedContent = parts[0] as string;
+  }
+} as typeof Blob;
+
+/** Parse a save into the app and return helpers to interact further */
+const loadSave = (data: SaveData = mockSaveData) => {
+  render(() => <IndexPage />);
+  fireEvent.input(screen.getByPlaceholderText(/paste base64/i), {
+    target: { value: encodeSaveData(data) },
+  });
+  fireEvent.click(screen.getByRole("button", { name: /parse data/i }));
+};
+
+/** Click Export Save and decode the resulting base64 */
+const exportAndDecode = (): SaveData => {
+  lastExportedContent = "";
+  fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+  return decodeSaveData(lastExportedContent);
+};
+
+beforeEach(() => {
+  lastExportedContent = "";
+  vi.clearAllMocks();
+});
+
+// ─── Encode / decode ────────────────────────────────────────────────────────
+
+describe("round-trip integrity", () => {
+  it("decodeSaveData(encodeSaveData(data)) is deep-equal to the original", () => {
+    expect(decodeSaveData(encodeSaveData(mockSaveData))).toEqual(mockSaveData);
   });
 
-  it("does not render SaveEditor before a save is parsed", () => {
+  it("parse → export produces output identical to the original save", () => {
+    loadSave();
+    const result = exportAndDecode();
+    expect(result).toEqual(mockSaveData);
+  });
+});
+
+// ─── Player mutations ────────────────────────────────────────────────────────
+
+describe("player edits round-trip", () => {
+  it("edited player name is preserved in the export", () => {
+    loadSave();
+    fireEvent.input(screen.getByDisplayValue("TestPlayer"), {
+      target: { value: "Azewilous" },
+    });
+    expect(exportAndDecode().player.name).toBe("Azewilous");
+  });
+
+  it("edited gold value is preserved in the export", () => {
+    loadSave();
+    fireEvent.input(screen.getByDisplayValue("5000"), {
+      target: { value: "99999" },
+    });
+    expect(exportAndDecode().player.gold).toBe(99999);
+  });
+});
+
+// ─── Achievement tab ─────────────────────────────────────────────────────────
+
+describe("achievements tab", () => {
+  it("shows coming soon when achievements tab is active", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /achievements/i }));
+    expect(screen.getByText(/coming soon/i)).toBeInTheDocument();
+  });
+});
+
+// ─── Inventory mutations ─────────────────────────────────────────────────────
+
+describe("inventory edits round-trip", () => {
+  it("removing an item is reflected in the export", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /inventory/i }));
+    const before = mockSaveData.player.items.length;
+    const removeBtn = document.querySelector(".inv-remove") as HTMLButtonElement;
+    fireEvent.click(removeBtn);
+    expect(exportAndDecode().player.items.length).toBe(before - 1);
+  });
+});
+
+// ─── UI shell ────────────────────────────────────────────────────────────────
+
+describe("page shell", () => {
+  it("renders navbar, hero, and footer before any save is loaded", () => {
+    render(() => <IndexPage />);
+    expect(screen.getByText(/Pokepath TD Editor/i)).toBeInTheDocument();
+    expect(screen.getByText(/Access · Decrypt/i)).toBeInTheDocument();
+    expect(screen.getByText(/support the original creator/i)).toBeInTheDocument();
+  });
+
+  it("does not show the editor before a save is parsed", () => {
     render(() => <IndexPage />);
     expect(document.querySelector(".save-editor")).not.toBeInTheDocument();
   });
 
-  it("renders SaveEditor after valid base64 is parsed", () => {
-    render(() => <IndexPage />);
-    const b64 = encodeSaveData(mockSaveData);
-    fireEvent.input(screen.getByPlaceholderText(/paste base64/i), {
-      target: { value: b64 },
-    });
-    fireEvent.click(screen.getByRole("button", { name: /parse data/i }));
+  it("shows the editor after a valid save is parsed", () => {
+    loadSave();
     expect(document.querySelector(".save-editor")).toBeInTheDocument();
   });
 
-  it("triggers a download when Export Save is clicked after parsing", () => {
+  it("shows a toast for invalid base64 input", () => {
     render(() => <IndexPage />);
-    const b64 = encodeSaveData(mockSaveData);
     fireEvent.input(screen.getByPlaceholderText(/paste base64/i), {
-      target: { value: b64 },
+      target: { value: "not-valid-base64!!!" },
     });
     fireEvent.click(screen.getByRole("button", { name: /parse data/i }));
-    fireEvent.click(screen.getByRole("button", { name: /export save/i }));
-    expect(URL.createObjectURL).toHaveBeenCalled();
+    expect(screen.getByRole("alert")).toHaveTextContent(/parse failed/i);
   });
 });

@@ -123,3 +123,11 @@ export const encodeSaveData = (data: SaveData): string => {
   for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
   return btoa(binary);
 };
+
+/** Decode a base64 save string back to SaveData */
+export const decodeSaveData = (b64: string): SaveData => {
+  const binary = atob(b64.replace(/\s+/g, ""));
+  const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+  return JSON.parse(new TextDecoder().decode(bytes)) as SaveData;
+};
+

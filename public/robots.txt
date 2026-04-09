@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pokepath-td-save-editor/data/
+Disallow: /pokepath-td-save-editor/images/
+
+Sitemap: https://azewilous.github.io/pokepath-td-save-editor/sitemap.xml

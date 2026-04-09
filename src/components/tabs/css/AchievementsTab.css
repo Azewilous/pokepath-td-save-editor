@@ -1,3 +1,30 @@
+.achievements-coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(0, 200, 240, 0.4);
+}
+
+.coming-soon-sub {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
 .achievement-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
