@@ -9,6 +9,10 @@ window.requestAnimationFrame = (cb: FrameRequestCallback) => {
 // jsdom doesn't implement scrollIntoView
 Element.prototype.scrollIntoView = vi.fn();
 
+// jsdom throws "Not implemented: navigation to another Document" when an
+// anchor element is programmatically clicked (e.g. the download trigger).
+HTMLAnchorElement.prototype.click = vi.fn();
+
 // Default fetch mock — returns an empty items array
 // Override per-test with vi.stubGlobal / vi.mocked as needed
 global.fetch = vi.fn().mockResolvedValue({
