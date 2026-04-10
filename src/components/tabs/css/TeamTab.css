@@ -74,3 +74,37 @@
   font-style: italic;
   opacity: 0.5;
 }
+
+.card-terrain {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.terrain-badge {
+  font-size: 0.65rem;
+  font-family: 'Orbitron', monospace;
+  letter-spacing: 0.05em;
+  color: #fff;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+.target-locked {
+  font-size: 0.82rem;
+  font-family: 'Exo 2', sans-serif;
+  color: var(--text-muted);
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lock-icon {
+  font-size: 0.65rem;
+  opacity: 0.7;
+}

@@ -9,7 +9,14 @@ import { SaveEditor } from '~/components/editor/SaveEditor';
 import { ExportModal } from '~/components/shared/ExportModal';
 
 const encodeBase64Save = (data: SaveData): string => {
-  const bytes = new TextEncoder().encode(JSON.stringify(data));
+  // Strip empty-species placeholders — the game crashes if specieKey is '' because
+  // Pokemon.fromOriginalData looks up pokemonData[''] → undefined → specie.tiles throws.
+  const clean = {
+    ...data,
+    team: data.team.filter((p) => p.specieKey !== ''),
+    box:  data.box.filter((p) => p.specieKey !== ''),
+  };
+  const bytes = new TextEncoder().encode(JSON.stringify(clean));
   let binary = '';
   for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
   return btoa(binary);

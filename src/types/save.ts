@@ -117,6 +117,7 @@ export type TargetMode =
   | 'invisible'
   | 'aura'
   | 'curseable'
+  | 'cursed'
   | 'random'
   | 'available'
   | 'notBurned'
@@ -135,6 +136,10 @@ export interface PokemonEntry {
   /** Hide the shiny sprite effect */
   hideShiny: boolean;
   isMega: boolean;
+  /** Custom nickname set by the player */
+  alias?: string;
+  /** Ditto's copied species key */
+  adn?: unknown;
 }
 
 /** Star thresholds that unlock extra team slots 7–10 (first 6 are always available) */

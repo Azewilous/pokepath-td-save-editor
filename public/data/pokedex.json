@@ -8,7 +8,11 @@
     "range": "110",
     "attackSpeed": "1.10s",
     "damage": "43",
-    "dps": "39.49"
+    "dps": "39.49",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#000",
@@ -19,7 +23,11 @@
     "range": "130",
     "attackSpeed": "0.88s",
     "damage": "109",
-    "dps": "127.30"
+    "dps": "127.30",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#000",
@@ -30,7 +38,12 @@
     "range": "165",
     "attackSpeed": "0.74s",
     "damage": "485",
-    "dps": "694.81"
+    "dps": "694.81",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#000",
@@ -41,7 +54,12 @@
     "range": "165",
     "attackSpeed": "0.74s",
     "damage": "520",
-    "dps": "744.86"
+    "dps": "744.86",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#001",
@@ -52,7 +70,12 @@
     "range": "95",
     "attackSpeed": "1.17s",
     "damage": "40",
-    "dps": "34.70"
+    "dps": "34.70",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#001",
@@ -63,7 +86,12 @@
     "range": "110",
     "attackSpeed": "1.09s",
     "damage": "104",
-    "dps": "99.13"
+    "dps": "99.13",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#001",
@@ -74,7 +102,12 @@
     "range": "145",
     "attackSpeed": "0.85s",
     "damage": "550",
-    "dps": "792.65"
+    "dps": "792.65",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#001",
@@ -85,7 +118,12 @@
     "range": "145",
     "attackSpeed": "0.75s",
     "damage": "800",
-    "dps": "1306.67"
+    "dps": "1306.67",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#002",
@@ -96,7 +134,12 @@
     "range": "110",
     "attackSpeed": "0.98s",
     "damage": "20",
-    "dps": "20.51"
+    "dps": "20.51",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#002",
@@ -107,7 +150,12 @@
     "range": "120",
     "attackSpeed": "0.83s",
     "damage": "50",
-    "dps": "62.80"
+    "dps": "62.80",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#002",
@@ -118,7 +166,12 @@
     "range": "145",
     "attackSpeed": "0.35s",
     "damage": "165",
-    "dps": "590.00"
+    "dps": "590.00",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#003",
@@ -129,7 +182,13 @@
     "range": "120",
     "attackSpeed": "1.74s",
     "damage": "123",
-    "dps": "71.48"
+    "dps": "71.48",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#003",
@@ -140,7 +199,13 @@
     "range": "145",
     "attackSpeed": "1.00s",
     "damage": "690",
-    "dps": "700.35"
+    "dps": "700.35",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#004",
@@ -151,7 +216,12 @@
     "range": "144",
     "attackSpeed": "1.33s",
     "damage": "84",
-    "dps": "63.57"
+    "dps": "63.57",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#004",
@@ -162,7 +232,12 @@
     "range": "210",
     "attackSpeed": "0.80s",
     "damage": "435",
-    "dps": "546.47"
+    "dps": "546.47",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#005",
@@ -173,7 +248,11 @@
     "range": "100",
     "attackSpeed": "0.59s",
     "damage": "33",
-    "dps": "57.18"
+    "dps": "57.18",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#005",
@@ -184,7 +263,11 @@
     "range": "120",
     "attackSpeed": "0.35s",
     "damage": "140",
-    "dps": "430.00"
+    "dps": "430.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#006",
@@ -195,7 +278,12 @@
     "range": "110",
     "attackSpeed": "1.76s",
     "damage": "58",
-    "dps": "32.99"
+    "dps": "32.99",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#006",
@@ -206,7 +294,12 @@
     "range": "130",
     "attackSpeed": "1.50s",
     "damage": "740",
-    "dps": "567.33"
+    "dps": "567.33",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#007",
@@ -217,7 +310,12 @@
     "range": "100",
     "attackSpeed": "1.62s",
     "damage": "117",
-    "dps": "73.07"
+    "dps": "73.07",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#007",
@@ -228,7 +326,12 @@
     "range": "110",
     "attackSpeed": "1.56s",
     "damage": "296",
-    "dps": "193.76"
+    "dps": "193.76",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#007",
@@ -239,7 +342,12 @@
     "range": "125",
     "attackSpeed": "1.50s",
     "damage": "1820",
-    "dps": "1274.00"
+    "dps": "1274.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#008",
@@ -250,7 +358,13 @@
     "range": "102",
     "attackSpeed": "1.25s",
     "damage": "114",
-    "dps": "97.67"
+    "dps": "97.67",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#008",
@@ -261,7 +375,13 @@
     "range": "120",
     "attackSpeed": "0.85s",
     "damage": "705",
-    "dps": "1037.06"
+    "dps": "1037.06",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#009",
@@ -272,7 +392,11 @@
     "range": "100",
     "attackSpeed": "1.12s",
     "damage": "45",
-    "dps": "41.08"
+    "dps": "41.08",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#009",
@@ -283,7 +407,11 @@
     "range": "115",
     "attackSpeed": "0.94s",
     "damage": "102",
-    "dps": "114.68"
+    "dps": "114.68",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#009",
@@ -294,7 +422,11 @@
     "range": "120",
     "attackSpeed": "0.50s",
     "damage": "360",
-    "dps": "873.00"
+    "dps": "873.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#010",
@@ -305,7 +437,12 @@
     "range": "220",
     "attackSpeed": "2.74s",
     "damage": "105",
-    "dps": "38.36"
+    "dps": "38.36",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#010",
@@ -316,7 +453,12 @@
     "range": "280",
     "attackSpeed": "1.65s",
     "damage": "440",
-    "dps": "266.67"
+    "dps": "266.67",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#011",
@@ -327,7 +469,11 @@
     "range": "110",
     "attackSpeed": "1.26s",
     "damage": "48",
-    "dps": "38.59"
+    "dps": "38.59",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#011",
@@ -338,7 +484,11 @@
     "range": "160",
     "attackSpeed": "0.70s",
     "damage": "449",
-    "dps": "770.00"
+    "dps": "770.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#012",
@@ -349,7 +499,12 @@
     "range": "115",
     "attackSpeed": "2.93s",
     "damage": "33",
-    "dps": "11.26"
+    "dps": "11.26",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#012",
@@ -360,7 +515,13 @@
     "range": "130",
     "attackSpeed": "1.40s",
     "damage": "1234",
-    "dps": "881.43"
+    "dps": "881.43",
+    "tiles": [
+      1,
+      2,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#013",
@@ -371,7 +532,11 @@
     "range": "122",
     "attackSpeed": "3.93s",
     "damage": "33",
-    "dps": "8.39"
+    "dps": "8.39",
+    "tiles": [
+      1
+    ],
+    "attackType": "area"
   },
   {
     "id": "#013",
@@ -382,7 +547,11 @@
     "range": "138",
     "attackSpeed": "2.97s",
     "damage": "71",
-    "dps": "24.26"
+    "dps": "24.26",
+    "tiles": [
+      1
+    ],
+    "attackType": "area"
   },
   {
     "id": "#013",
@@ -393,7 +562,11 @@
     "range": "180",
     "attackSpeed": "2.80s",
     "damage": "325",
-    "dps": "116.07"
+    "dps": "116.07",
+    "tiles": [
+      1
+    ],
+    "attackType": "area"
   },
   {
     "id": "#014",
@@ -404,7 +577,11 @@
     "range": "100",
     "attackSpeed": "3.25s",
     "damage": "0",
-    "dps": "0.00"
+    "dps": "0.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "area"
   },
   {
     "id": "#014",
@@ -415,7 +592,11 @@
     "range": "140",
     "attackSpeed": "1.20s",
     "damage": "25",
-    "dps": "20.83"
+    "dps": "20.83",
+    "tiles": [
+      1
+    ],
+    "attackType": "area"
   },
   {
     "id": "#015",
@@ -426,7 +607,13 @@
     "range": "348",
     "attackSpeed": "1.90s",
     "damage": "1208",
-    "dps": "651.68"
+    "dps": "651.68",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#016",
@@ -437,7 +624,12 @@
     "range": "130",
     "attackSpeed": "0.80s",
     "damage": "140",
-    "dps": "175.00"
+    "dps": "175.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#017",
@@ -448,7 +640,12 @@
     "range": "230",
     "attackSpeed": "2.00s",
     "damage": "902",
-    "dps": "484.82"
+    "dps": "484.82",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#018",
@@ -459,7 +656,12 @@
     "range": "110",
     "attackSpeed": "1.56s",
     "damage": "55",
-    "dps": "38.38"
+    "dps": "38.38",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#018",
@@ -470,7 +672,12 @@
     "range": "130",
     "attackSpeed": "0.60s",
     "damage": "305",
-    "dps": "699.58"
+    "dps": "699.58",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#019",
@@ -481,7 +688,12 @@
     "range": "107",
     "attackSpeed": "0.00s",
     "damage": "0",
-    "dps": "0.00"
+    "dps": "0.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "aura"
   },
   {
     "id": "#019",
@@ -492,7 +704,12 @@
     "range": "170",
     "attackSpeed": "0.00s",
     "damage": "0",
-    "dps": "0.00"
+    "dps": "0.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "aura"
   },
   {
     "id": "#020",
@@ -503,7 +720,12 @@
     "range": "110",
     "attackSpeed": "1.78s",
     "damage": "156",
-    "dps": "87.64"
+    "dps": "87.64",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#020",
@@ -514,7 +736,12 @@
     "range": "150",
     "attackSpeed": "1.55s",
     "damage": "1010",
-    "dps": "651.61"
+    "dps": "651.61",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#021",
@@ -525,7 +752,12 @@
     "range": "120",
     "attackSpeed": "2.47s",
     "damage": "45",
-    "dps": "18.40"
+    "dps": "18.40",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#021",
@@ -536,7 +768,12 @@
     "range": "130",
     "attackSpeed": "2.21s",
     "damage": "195",
-    "dps": "89.24"
+    "dps": "89.24",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#021",
@@ -547,7 +784,12 @@
     "range": "140",
     "attackSpeed": "1.70s",
     "damage": "930",
-    "dps": "558.00"
+    "dps": "558.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#022",
@@ -558,7 +800,12 @@
     "range": "130",
     "attackSpeed": "0.88s",
     "damage": "37",
-    "dps": "42.48"
+    "dps": "42.48",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#022",
@@ -569,7 +816,12 @@
     "range": "140",
     "attackSpeed": "0.77s",
     "damage": "59",
-    "dps": "78.40"
+    "dps": "78.40",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#022",
@@ -580,7 +832,12 @@
     "range": "170",
     "attackSpeed": "0.50s",
     "damage": "280",
-    "dps": "610.40"
+    "dps": "610.40",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#023",
@@ -591,7 +848,12 @@
     "range": "125",
     "attackSpeed": "1.14s",
     "damage": "38",
-    "dps": "33.81"
+    "dps": "33.81",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#023",
@@ -602,7 +864,13 @@
     "range": "140",
     "attackSpeed": "0.75s",
     "damage": "225",
-    "dps": "300.00"
+    "dps": "300.00",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#024",
@@ -613,7 +881,12 @@
     "range": "163",
     "attackSpeed": "2.95s",
     "damage": "66",
-    "dps": "22.63"
+    "dps": "22.63",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#024",
@@ -624,7 +897,12 @@
     "range": "250",
     "attackSpeed": "1.70s",
     "damage": "655",
-    "dps": "394.94"
+    "dps": "394.94",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#025",
@@ -635,7 +913,12 @@
     "range": "100",
     "attackSpeed": "1.88s",
     "damage": "40",
-    "dps": "22.04"
+    "dps": "22.04",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#025",
@@ -646,7 +929,12 @@
     "range": "110",
     "attackSpeed": "0.75s",
     "damage": "313",
-    "dps": "438.27"
+    "dps": "438.27",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#026",
@@ -657,7 +945,12 @@
     "range": "140",
     "attackSpeed": "1.50s",
     "damage": "270",
-    "dps": "180.00"
+    "dps": "180.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#027",
@@ -668,7 +961,12 @@
     "range": "100",
     "attackSpeed": "1.89s",
     "damage": "122",
-    "dps": "65.40"
+    "dps": "65.40",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#027",
@@ -679,7 +977,12 @@
     "range": "120",
     "attackSpeed": "1.55s",
     "damage": "855",
-    "dps": "579.23"
+    "dps": "579.23",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#028",
@@ -690,7 +993,11 @@
     "range": "180",
     "attackSpeed": "2.94s",
     "damage": "116",
-    "dps": "39.63"
+    "dps": "39.63",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#028",
@@ -701,7 +1008,11 @@
     "range": "280",
     "attackSpeed": "2.40s",
     "damage": "553",
-    "dps": "233.88"
+    "dps": "233.88",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#029",
@@ -712,7 +1023,12 @@
     "range": "265",
     "attackSpeed": "6.00s",
     "damage": "950",
-    "dps": "237.50"
+    "dps": "237.50",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#029",
@@ -723,7 +1039,12 @@
     "range": "300",
     "attackSpeed": "6.00s",
     "damage": "5100",
-    "dps": "1572.50"
+    "dps": "1572.50",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#030",
@@ -734,7 +1055,11 @@
     "range": "304",
     "attackSpeed": "3.58s",
     "damage": "85",
-    "dps": "24.42"
+    "dps": "24.42",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#030",
@@ -745,7 +1070,11 @@
     "range": "480",
     "attackSpeed": "2.50s",
     "damage": "860",
-    "dps": "404.20"
+    "dps": "404.20",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#031",
@@ -756,7 +1085,12 @@
     "range": "115",
     "attackSpeed": "1.18s",
     "damage": "52",
-    "dps": "44.60"
+    "dps": "44.60",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#031",
@@ -767,7 +1101,12 @@
     "range": "133",
     "attackSpeed": "1.06s",
     "damage": "114",
-    "dps": "111.86"
+    "dps": "111.86",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#031",
@@ -778,7 +1117,12 @@
     "range": "155",
     "attackSpeed": "0.54s",
     "damage": "530",
-    "dps": "1143.43"
+    "dps": "1143.43",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#032",
@@ -789,7 +1133,12 @@
     "range": "191",
     "attackSpeed": "0.74s",
     "damage": "45",
-    "dps": "78.33"
+    "dps": "78.33",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#032",
@@ -800,7 +1149,12 @@
     "range": "260",
     "attackSpeed": "0.50s",
     "damage": "355",
-    "dps": "905.80"
+    "dps": "905.80",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#033",
@@ -811,7 +1165,11 @@
     "range": "180",
     "attackSpeed": "2.80s",
     "damage": "350",
-    "dps": "125.00"
+    "dps": "125.00",
+    "tiles": [
+      3
+    ],
+    "attackType": "area"
   },
   {
     "id": "#034",
@@ -822,7 +1180,12 @@
     "range": "260",
     "attackSpeed": "1.52s",
     "damage": "180",
-    "dps": "120.44"
+    "dps": "120.44",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#034",
@@ -833,7 +1196,12 @@
     "range": "400",
     "attackSpeed": "1.15s",
     "damage": "810",
-    "dps": "721.96"
+    "dps": "721.96",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#035",
@@ -844,7 +1212,12 @@
     "range": "130",
     "attackSpeed": "1.79s",
     "damage": "78",
-    "dps": "44.59"
+    "dps": "44.59",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#035",
@@ -855,7 +1228,12 @@
     "range": "155",
     "attackSpeed": "0.85s",
     "damage": "402",
-    "dps": "503.68"
+    "dps": "503.68",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#036",
@@ -866,7 +1244,12 @@
     "range": "160",
     "attackSpeed": "0.91s",
     "damage": "107",
-    "dps": "125.04"
+    "dps": "125.04",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#036",
@@ -877,7 +1260,12 @@
     "range": "190",
     "attackSpeed": "0.69s",
     "damage": "365",
-    "dps": "608.55"
+    "dps": "608.55",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#037",
@@ -888,7 +1276,12 @@
     "range": "111",
     "attackSpeed": "1.53s",
     "damage": "92",
-    "dps": "65.31"
+    "dps": "65.31",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#037",
@@ -899,7 +1292,12 @@
     "range": "150",
     "attackSpeed": "0.85s",
     "damage": "625",
-    "dps": "919.41"
+    "dps": "919.41",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#038",
@@ -910,7 +1308,12 @@
     "range": "90",
     "attackSpeed": "1.97s",
     "damage": "46",
-    "dps": "23.80"
+    "dps": "23.80",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#038",
@@ -921,7 +1324,12 @@
     "range": "140",
     "attackSpeed": "1.66s",
     "damage": "208",
-    "dps": "131.13"
+    "dps": "131.13",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#038",
@@ -932,7 +1340,12 @@
     "range": "180",
     "attackSpeed": "1.00s",
     "damage": "755",
-    "dps": "868.40"
+    "dps": "868.40",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#039",
@@ -943,7 +1356,12 @@
     "range": "323",
     "attackSpeed": "1.85s",
     "damage": "155",
-    "dps": "85.05"
+    "dps": "85.05",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#039",
@@ -954,7 +1372,12 @@
     "range": "400",
     "attackSpeed": "1.42s",
     "damage": "1210",
-    "dps": "873.42"
+    "dps": "873.42",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#040",
@@ -965,7 +1388,12 @@
     "range": "100",
     "attackSpeed": "0.83s",
     "damage": "50",
-    "dps": "70.65"
+    "dps": "70.65",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#040",
@@ -976,7 +1404,12 @@
     "range": "115",
     "attackSpeed": "0.40s",
     "damage": "425",
-    "dps": "1965.63"
+    "dps": "1965.63",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#041",
@@ -987,7 +1420,12 @@
     "range": "110",
     "attackSpeed": "2.54s",
     "damage": "38",
-    "dps": "15.26"
+    "dps": "15.26",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#041",
@@ -998,7 +1436,12 @@
     "range": "140",
     "attackSpeed": "0.70s",
     "damage": "115",
-    "dps": "180.86"
+    "dps": "180.86",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#042",
@@ -1009,7 +1452,12 @@
     "range": "140",
     "attackSpeed": "2.00s",
     "damage": "50",
-    "dps": "25.00"
+    "dps": "25.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#043",
@@ -1020,7 +1468,12 @@
     "range": "235",
     "attackSpeed": "0.75s",
     "damage": "625",
-    "dps": "958.53"
+    "dps": "958.53",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#044",
@@ -1031,7 +1484,12 @@
     "range": "110",
     "attackSpeed": "1.50s",
     "damage": "29",
-    "dps": "19.29"
+    "dps": "19.29",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#044",
@@ -1042,7 +1500,12 @@
     "range": "124",
     "attackSpeed": "1.40s",
     "damage": "67",
-    "dps": "47.72"
+    "dps": "47.72",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#044",
@@ -1053,7 +1516,12 @@
     "range": "140",
     "attackSpeed": "1.40s",
     "damage": "252",
-    "dps": "180.00"
+    "dps": "180.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#045",
@@ -1064,7 +1532,12 @@
     "range": "270",
     "attackSpeed": "2.67s",
     "damage": "126",
-    "dps": "48.48"
+    "dps": "48.48",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#045",
@@ -1075,7 +1548,12 @@
     "range": "350",
     "attackSpeed": "1.60s",
     "damage": "730",
-    "dps": "627.34"
+    "dps": "627.34",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#046",
@@ -1086,7 +1564,12 @@
     "range": "125",
     "attackSpeed": "1.23s",
     "damage": "43",
-    "dps": "35.36"
+    "dps": "35.36",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#046",
@@ -1097,7 +1580,12 @@
     "range": "140",
     "attackSpeed": "1.06s",
     "damage": "101",
-    "dps": "97.95"
+    "dps": "97.95",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#046",
@@ -1108,7 +1596,12 @@
     "range": "180",
     "attackSpeed": "0.60s",
     "damage": "460",
-    "dps": "843.33"
+    "dps": "843.33",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#047",
@@ -1119,7 +1612,13 @@
     "range": "120",
     "attackSpeed": "2.25s",
     "damage": "127",
-    "dps": "56.49"
+    "dps": "56.49",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#047",
@@ -1130,7 +1629,13 @@
     "range": "140",
     "attackSpeed": "1.73s",
     "damage": "460",
-    "dps": "265.90"
+    "dps": "265.90",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#048",
@@ -1141,7 +1646,12 @@
     "range": "135",
     "attackSpeed": "0.90s",
     "damage": "33",
-    "dps": "38.03"
+    "dps": "38.03",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#048",
@@ -1152,7 +1662,12 @@
     "range": "180",
     "attackSpeed": "0.50s",
     "damage": "275",
-    "dps": "599.68"
+    "dps": "599.68",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#049",
@@ -1163,7 +1678,13 @@
     "range": "110",
     "attackSpeed": "2.72s",
     "damage": "94",
-    "dps": "34.53"
+    "dps": "34.53",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#049",
@@ -1174,7 +1695,12 @@
     "range": "140",
     "attackSpeed": "2.20s",
     "damage": "175",
-    "dps": "79.40"
+    "dps": "79.40",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#050",
@@ -1185,7 +1711,13 @@
     "range": "130",
     "attackSpeed": "0.37s",
     "damage": "335",
-    "dps": "1359.46"
+    "dps": "1359.46",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#050",
@@ -1196,7 +1728,13 @@
     "range": "145",
     "attackSpeed": "0.25s",
     "damage": "335",
-    "dps": "2012.00"
+    "dps": "2012.00",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#051",
@@ -1207,7 +1745,12 @@
     "range": "145",
     "attackSpeed": "1.85s",
     "damage": "163",
-    "dps": "88.11"
+    "dps": "88.11",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#052",
@@ -1218,7 +1761,12 @@
     "range": "140",
     "attackSpeed": "2.80s",
     "damage": "500",
-    "dps": "178.57"
+    "dps": "178.57",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#053",
@@ -1229,7 +1777,12 @@
     "range": "400",
     "attackSpeed": "0.20s",
     "damage": "101",
-    "dps": "556.00"
+    "dps": "556.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#054",
@@ -1240,7 +1793,12 @@
     "range": "500",
     "attackSpeed": "1.70s",
     "damage": "715",
-    "dps": "473.24"
+    "dps": "473.24",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#055",
@@ -1251,7 +1809,11 @@
     "range": "90",
     "attackSpeed": "2.18s",
     "damage": "20",
-    "dps": "9.26"
+    "dps": "9.26",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#055",
@@ -1262,7 +1824,11 @@
     "range": "100",
     "attackSpeed": "2.14s",
     "damage": "97",
-    "dps": "45.95"
+    "dps": "45.95",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#055",
@@ -1273,7 +1839,11 @@
     "range": "120",
     "attackSpeed": "1.60s",
     "damage": "675",
-    "dps": "443.00"
+    "dps": "443.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#056",
@@ -1284,7 +1854,12 @@
     "range": "125",
     "attackSpeed": "2.63s",
     "damage": "152",
-    "dps": "58.33"
+    "dps": "58.33",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#056",
@@ -1295,7 +1870,12 @@
     "range": "140",
     "attackSpeed": "1.82s",
     "damage": "860",
-    "dps": "481.98"
+    "dps": "481.98",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#057",
@@ -1306,7 +1886,13 @@
     "range": "130",
     "attackSpeed": "1.00s",
     "damage": "207",
-    "dps": "259.00"
+    "dps": "259.00",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#058",
@@ -1317,7 +1903,13 @@
     "range": "130",
     "attackSpeed": "5.23s",
     "damage": "143",
-    "dps": "27.33"
+    "dps": "27.33",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#058",
@@ -1328,7 +1920,12 @@
     "range": "140",
     "attackSpeed": "2.80s",
     "damage": "505",
-    "dps": "180.36"
+    "dps": "180.36",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "area"
   },
   {
     "id": "#059",
@@ -1339,7 +1936,13 @@
     "range": "100",
     "attackSpeed": "1.42s",
     "damage": "107",
-    "dps": "81.59"
+    "dps": "81.59",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#059",
@@ -1350,7 +1953,13 @@
     "range": "130",
     "attackSpeed": "0.70s",
     "damage": "525",
-    "dps": "994.21"
+    "dps": "994.21",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#060",
@@ -1361,7 +1970,13 @@
     "range": "300",
     "attackSpeed": "2.30s",
     "damage": "460",
-    "dps": "205.00"
+    "dps": "205.00",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#061",
@@ -1372,7 +1987,14 @@
     "range": "150",
     "attackSpeed": "0.90s",
     "damage": "501",
-    "dps": "584.56"
+    "dps": "584.56",
+    "tiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#062",
@@ -1383,7 +2005,12 @@
     "range": "120",
     "attackSpeed": "1.15s",
     "damage": "29",
-    "dps": "25.30"
+    "dps": "25.30",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#062",
@@ -1394,7 +2021,12 @@
     "range": "140",
     "attackSpeed": "0.90s",
     "damage": "455",
-    "dps": "513.16"
+    "dps": "513.16",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#063",
@@ -1405,7 +2037,14 @@
     "range": "100",
     "attackSpeed": "1.52s",
     "damage": "86",
-    "dps": "64.67"
+    "dps": "64.67",
+    "tiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#063",
@@ -1416,7 +2055,14 @@
     "range": "130",
     "attackSpeed": "0.90s",
     "damage": "420",
-    "dps": "641.67"
+    "dps": "641.67",
+    "tiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#064",
@@ -1427,7 +2073,13 @@
     "range": "130",
     "attackSpeed": "2.42s",
     "damage": "99",
-    "dps": "41.49"
+    "dps": "41.49",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#064",
@@ -1438,7 +2090,13 @@
     "range": "160",
     "attackSpeed": "2.00s",
     "damage": "425",
-    "dps": "215.69"
+    "dps": "215.69",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#065",
@@ -1449,7 +2107,12 @@
     "range": "120",
     "attackSpeed": "9.01s",
     "damage": "142",
-    "dps": "15.76"
+    "dps": "15.76",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#065",
@@ -1460,7 +2123,12 @@
     "range": "140",
     "attackSpeed": "5.80s",
     "damage": "1260",
-    "dps": "217.24"
+    "dps": "217.24",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#066",
@@ -1471,7 +2139,12 @@
     "range": "95",
     "attackSpeed": "2.85s",
     "damage": "495",
-    "dps": "105.97"
+    "dps": "105.97",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#066",
@@ -1482,7 +2155,12 @@
     "range": "120",
     "attackSpeed": "1.90s",
     "damage": "4250",
-    "dps": "1447.37"
+    "dps": "1447.37",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#067",
@@ -1493,7 +2171,12 @@
     "range": "175",
     "attackSpeed": "1.24s",
     "damage": "17",
-    "dps": "14.00"
+    "dps": "14.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#067",
@@ -1504,7 +2187,12 @@
     "range": "210",
     "attackSpeed": "1.07s",
     "damage": "66",
-    "dps": "63.53"
+    "dps": "63.53",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#067",
@@ -1515,7 +2203,12 @@
     "range": "280",
     "attackSpeed": "0.65s",
     "damage": "275",
-    "dps": "476.15"
+    "dps": "476.15",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#068",
@@ -1526,7 +2219,13 @@
     "range": "90",
     "attackSpeed": "0.85s",
     "damage": "16",
-    "dps": "18.92"
+    "dps": "18.92",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#068",
@@ -1537,7 +2236,13 @@
     "range": "100",
     "attackSpeed": "0.80s",
     "damage": "162",
-    "dps": "207.56"
+    "dps": "207.56",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#068",
@@ -1548,7 +2253,13 @@
     "range": "110",
     "attackSpeed": "0.70s",
     "damage": "430",
-    "dps": "675.71"
+    "dps": "675.71",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#068",
@@ -1559,7 +2270,13 @@
     "range": "130",
     "attackSpeed": "0.60s",
     "damage": "500",
-    "dps": "916.67"
+    "dps": "916.67",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#069",
@@ -1570,7 +2287,11 @@
     "range": "110",
     "attackSpeed": "2.18s",
     "damage": "33",
-    "dps": "15.17"
+    "dps": "15.17",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#069",
@@ -1581,7 +2302,11 @@
     "range": "120",
     "attackSpeed": "2.00s",
     "damage": "128",
-    "dps": "63.87"
+    "dps": "63.87",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#069",
@@ -1592,7 +2317,11 @@
     "range": "130",
     "attackSpeed": "1.40s",
     "damage": "700",
-    "dps": "500.00"
+    "dps": "500.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#070",
@@ -1603,7 +2332,12 @@
     "range": "100",
     "attackSpeed": "0.00s",
     "damage": "0",
-    "dps": "0.00"
+    "dps": "0.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#071",
@@ -1614,7 +2348,11 @@
     "range": "210",
     "attackSpeed": "3.98s",
     "damage": "29",
-    "dps": "7.40"
+    "dps": "7.40",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#071",
@@ -1625,7 +2363,11 @@
     "range": "270",
     "attackSpeed": "3.70s",
     "damage": "1350",
-    "dps": "370.34"
+    "dps": "370.34",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#072",
@@ -1636,7 +2378,12 @@
     "range": "110",
     "attackSpeed": "1.39s",
     "damage": "95",
-    "dps": "70.97"
+    "dps": "70.97",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#072",
@@ -1647,7 +2394,12 @@
     "range": "140",
     "attackSpeed": "0.78s",
     "damage": "305",
-    "dps": "413.29"
+    "dps": "413.29",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#073",
@@ -1658,7 +2410,12 @@
     "range": "100",
     "attackSpeed": "3.19s",
     "damage": "85",
-    "dps": "26.65"
+    "dps": "26.65",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#073",
@@ -1669,7 +2426,12 @@
     "range": "115",
     "attackSpeed": "3.04s",
     "damage": "230",
-    "dps": "75.53"
+    "dps": "75.53",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#073",
@@ -1680,7 +2442,12 @@
     "range": "120",
     "attackSpeed": "2.50s",
     "damage": "505",
-    "dps": "202.00"
+    "dps": "202.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#074",
@@ -1691,7 +2458,12 @@
     "range": "106",
     "attackSpeed": "2.58s",
     "damage": "68",
-    "dps": "27.21"
+    "dps": "27.21",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#074",
@@ -1702,7 +2474,12 @@
     "range": "160",
     "attackSpeed": "2.85s",
     "damage": "525",
-    "dps": "207.28"
+    "dps": "207.28",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#075",
@@ -1713,7 +2490,12 @@
     "range": "110",
     "attackSpeed": "2.75s",
     "damage": "68",
-    "dps": "25.30"
+    "dps": "25.30",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#075",
@@ -1724,7 +2506,12 @@
     "range": "140",
     "attackSpeed": "1.60s",
     "damage": "700",
-    "dps": "503.13"
+    "dps": "503.13",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#076",
@@ -1735,7 +2522,13 @@
     "range": "99",
     "attackSpeed": "2.45s",
     "damage": "58",
-    "dps": "24.25"
+    "dps": "24.25",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#076",
@@ -1746,7 +2539,13 @@
     "range": "145",
     "attackSpeed": "1.00s",
     "damage": "670",
-    "dps": "737.00"
+    "dps": "737.00",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#077",
@@ -1757,7 +2556,12 @@
     "range": "170",
     "attackSpeed": "2.99s",
     "damage": "120",
-    "dps": "43.11"
+    "dps": "43.11",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#077",
@@ -1768,7 +2572,12 @@
     "range": "215",
     "attackSpeed": "1.85s",
     "damage": "910",
-    "dps": "590.27"
+    "dps": "590.27",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#078",
@@ -1779,7 +2588,12 @@
     "range": "110",
     "attackSpeed": "1.97s",
     "damage": "66",
-    "dps": "34.77"
+    "dps": "34.77",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#078",
@@ -1790,7 +2604,12 @@
     "range": "120",
     "attackSpeed": "1.86s",
     "damage": "176",
-    "dps": "94.57"
+    "dps": "94.57",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#078",
@@ -1801,7 +2620,12 @@
     "range": "165",
     "attackSpeed": "0.92s",
     "damage": "1170",
-    "dps": "1271.74"
+    "dps": "1271.74",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#079",
@@ -1812,7 +2636,13 @@
     "range": "97",
     "attackSpeed": "2.46s",
     "damage": "202",
-    "dps": "83.47"
+    "dps": "83.47",
+    "tiles": [
+      1,
+      2,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#079",
@@ -1823,7 +2653,13 @@
     "range": "115",
     "attackSpeed": "1.80s",
     "damage": "1700",
-    "dps": "1001.11"
+    "dps": "1001.11",
+    "tiles": [
+      1,
+      2,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#080",
@@ -1834,7 +2670,12 @@
     "range": "110",
     "attackSpeed": "0.97s",
     "damage": "73",
-    "dps": "76.72"
+    "dps": "76.72",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#080",
@@ -1845,7 +2686,12 @@
     "range": "130",
     "attackSpeed": "0.89s",
     "damage": "133",
-    "dps": "153.03"
+    "dps": "153.03",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#080",
@@ -1856,7 +2702,12 @@
     "range": "150",
     "attackSpeed": "0.75s",
     "damage": "450",
-    "dps": "795.00"
+    "dps": "795.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#081",
@@ -1867,7 +2718,12 @@
     "range": "165",
     "attackSpeed": "4.46s",
     "damage": "65",
-    "dps": "14.89"
+    "dps": "14.89",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#081",
@@ -1878,7 +2734,12 @@
     "range": "220",
     "attackSpeed": "4.36s",
     "damage": "190",
-    "dps": "46.19"
+    "dps": "46.19",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#081",
@@ -1889,7 +2750,13 @@
     "range": "700",
     "attackSpeed": "4.00s",
     "damage": "1200",
-    "dps": "345.00"
+    "dps": "345.00",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#082",
@@ -1900,7 +2767,13 @@
     "range": "233",
     "attackSpeed": "1.22s",
     "damage": "21",
-    "dps": "17.86"
+    "dps": "17.86",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#082",
@@ -1911,7 +2784,13 @@
     "range": "246",
     "attackSpeed": "0.78s",
     "damage": "114",
-    "dps": "158.44"
+    "dps": "158.44",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#082",
@@ -1922,7 +2801,13 @@
     "range": "300",
     "attackSpeed": "0.45s",
     "damage": "440",
-    "dps": "1192.89"
+    "dps": "1192.89",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#083",
@@ -1933,7 +2818,12 @@
     "range": "150",
     "attackSpeed": "0.00s",
     "damage": "0",
-    "dps": "0.00"
+    "dps": "0.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "aura"
   },
   {
     "id": "#084",
@@ -1944,7 +2834,11 @@
     "range": "115",
     "attackSpeed": "2.00s",
     "damage": "350",
-    "dps": "175.88"
+    "dps": "175.88",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#085",
@@ -1955,7 +2849,13 @@
     "range": "162",
     "attackSpeed": "2.11s",
     "damage": "104",
-    "dps": "50.59"
+    "dps": "50.59",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#085",
@@ -1966,7 +2866,13 @@
     "range": "260",
     "attackSpeed": "1.40s",
     "damage": "415",
-    "dps": "318.71"
+    "dps": "318.71",
+    "tiles": [
+      1,
+      2,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#086",
@@ -1977,7 +2883,11 @@
     "range": "102",
     "attackSpeed": "3.97s",
     "damage": "74",
-    "dps": "18.64"
+    "dps": "18.64",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#086",
@@ -1988,7 +2898,11 @@
     "range": "150",
     "attackSpeed": "2.40s",
     "damage": "625",
-    "dps": "260.42"
+    "dps": "260.42",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#087",
@@ -1999,7 +2913,12 @@
     "range": "300",
     "attackSpeed": "8.50s",
     "damage": "5500",
-    "dps": "808.82"
+    "dps": "808.82",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#088",
@@ -2010,7 +2929,11 @@
     "range": "120",
     "attackSpeed": "0.60s",
     "damage": "300",
-    "dps": "500.00"
+    "dps": "500.00",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#089",
@@ -2021,7 +2944,12 @@
     "range": "441",
     "attackSpeed": "4.41s",
     "damage": "441",
-    "dps": "102.20"
+    "dps": "102.20",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#090",
@@ -2032,7 +2960,11 @@
     "range": "129",
     "attackSpeed": "4.94s",
     "damage": "94",
-    "dps": "19.57"
+    "dps": "19.57",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#090",
@@ -2043,7 +2975,11 @@
     "range": "200",
     "attackSpeed": "3.50s",
     "damage": "1200",
-    "dps": "411.43"
+    "dps": "411.43",
+    "tiles": [
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#091",
@@ -2054,7 +2990,12 @@
     "range": "108",
     "attackSpeed": "3.49s",
     "damage": "62",
-    "dps": "17.78"
+    "dps": "17.78",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#091",
@@ -2065,7 +3006,12 @@
     "range": "190",
     "attackSpeed": "1.90s",
     "damage": "365",
-    "dps": "192.11"
+    "dps": "192.11",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "area"
   },
   {
     "id": "#092",
@@ -2076,7 +3022,12 @@
     "range": "180",
     "attackSpeed": "1.79s",
     "damage": "57",
-    "dps": "32.58"
+    "dps": "32.58",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#092",
@@ -2087,7 +3038,12 @@
     "range": "360",
     "attackSpeed": "0.93s",
     "damage": "441",
-    "dps": "497.96"
+    "dps": "497.96",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#093",
@@ -2098,7 +3054,12 @@
     "range": "142",
     "attackSpeed": "2.75s",
     "damage": "60",
-    "dps": "22.35"
+    "dps": "22.35",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#093",
@@ -2109,7 +3070,12 @@
     "range": "190",
     "attackSpeed": "1.70s",
     "damage": "475",
-    "dps": "286.41"
+    "dps": "286.41",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#094",
@@ -2120,7 +3086,12 @@
     "range": "137",
     "attackSpeed": "2.76s",
     "damage": "83",
-    "dps": "64.38"
+    "dps": "64.38",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#094",
@@ -2131,7 +3102,12 @@
     "range": "170",
     "attackSpeed": "1.20s",
     "damage": "950",
-    "dps": "1583.33"
+    "dps": "1583.33",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#095",
@@ -2142,7 +3118,12 @@
     "range": "110",
     "attackSpeed": "3.85s",
     "damage": "75",
-    "dps": "19.95"
+    "dps": "19.95",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#095",
@@ -2153,7 +3134,12 @@
     "range": "150",
     "attackSpeed": "2.20s",
     "damage": "666",
-    "dps": "320.89"
+    "dps": "320.89",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#096",
@@ -2164,7 +3150,12 @@
     "range": "159",
     "attackSpeed": "1.75s",
     "damage": "77",
-    "dps": "44.00"
+    "dps": "44.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#096",
@@ -2175,7 +3166,12 @@
     "range": "350",
     "attackSpeed": "1.52s",
     "damage": "376",
-    "dps": "247.37"
+    "dps": "247.37",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#097",
@@ -2186,7 +3182,12 @@
     "range": "145",
     "attackSpeed": "3.16s",
     "damage": "53",
-    "dps": "16.78"
+    "dps": "16.78",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#097",
@@ -2197,7 +3198,12 @@
     "range": "240",
     "attackSpeed": "2.60s",
     "damage": "665",
-    "dps": "255.77"
+    "dps": "255.77",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "single"
   },
   {
     "id": "#098",
@@ -2208,7 +3214,12 @@
     "range": "110",
     "attackSpeed": "2.43s",
     "damage": "114",
-    "dps": "47.58"
+    "dps": "47.58",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#098",
@@ -2219,7 +3230,12 @@
     "range": "120",
     "attackSpeed": "1.78s",
     "damage": "294",
-    "dps": "169.74"
+    "dps": "169.74",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#098",
@@ -2230,7 +3246,12 @@
     "range": "130",
     "attackSpeed": "1.10s",
     "damage": "1500",
-    "dps": "1465.91"
+    "dps": "1465.91",
+    "tiles": [
+      1,
+      3
+    ],
+    "attackType": "single"
   },
   {
     "id": "#099",
@@ -2241,7 +3262,11 @@
     "range": "121",
     "attackSpeed": "3.67s",
     "damage": "68",
-    "dps": "19.16"
+    "dps": "19.16",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#099",
@@ -2252,7 +3277,11 @@
     "range": "133",
     "attackSpeed": "3.08s",
     "damage": "292",
-    "dps": "102.86"
+    "dps": "102.86",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#099",
@@ -2263,7 +3292,11 @@
     "range": "160",
     "attackSpeed": "1.00s",
     "damage": "1500",
-    "dps": "1875.00"
+    "dps": "1875.00",
+    "tiles": [
+      1
+    ],
+    "attackType": "single"
   },
   {
     "id": "#100",
@@ -2274,7 +3307,12 @@
     "range": "115",
     "attackSpeed": "3.37s",
     "damage": "42",
-    "dps": "12.48"
+    "dps": "12.48",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#100",
@@ -2285,7 +3323,12 @@
     "range": "130",
     "attackSpeed": "3.14s",
     "damage": "92",
-    "dps": "29.32"
+    "dps": "29.32",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#100",
@@ -2296,7 +3339,12 @@
     "range": "155",
     "attackSpeed": "2.50s",
     "damage": "400",
-    "dps": "160.00"
+    "dps": "160.00",
+    "tiles": [
+      1,
+      2
+    ],
+    "attackType": "area"
   },
   {
     "id": "#101",
@@ -2307,7 +3355,12 @@
     "range": "180",
     "attackSpeed": "0.00s",
     "damage": "0",
-    "dps": "0.00"
+    "dps": "0.00",
+    "tiles": [
+      1,
+      4
+    ],
+    "attackType": "aura"
   },
   {
     "id": "#102",
@@ -2318,7 +3371,13 @@
     "range": "140",
     "attackSpeed": "1.00s",
     "damage": "1050",
-    "dps": "1050.00"
+    "dps": "1050.00",
+    "tiles": [
+      1,
+      3,
+      4
+    ],
+    "attackType": "single"
   },
   {
     "id": "#404",
@@ -2329,6 +3388,13 @@
     "range": "110",
     "attackSpeed": "0.10s",
     "damage": "101",
-    "dps": "1061.51"
+    "dps": "1061.51",
+    "tiles": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "attackType": "single"
   }
 ]

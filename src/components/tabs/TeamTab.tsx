@@ -12,12 +12,21 @@ const TARGET_MODES: TargetMode[] = [
   'invisible',
   'aura',
   'curseable',
+  'cursed',
   'random',
   'available',
   'notBurned',
   'highArmor',
   'lowHP',
 ];
+
+const TILE_LABELS: Record<number, string> = { 1: 'Field', 2: 'Grass', 3: 'Water', 4: 'Air' };
+const TILE_COLORS: Record<number, string> = {
+  1: '#b5905a',
+  2: '#4caf50',
+  3: '#2196f3',
+  4: '#9c7fcc',
+};
 
 const fetchItems = (): Promise<GameItem[]> =>
   fetch(`${import.meta.env.BASE_URL}data/items.json`).then((r) => r.json());
@@ -92,19 +101,61 @@ export const TeamTab = (props: Props) => {
                       />
                     </div>
                     <div class="field">
-                      <label>Target</label>
-                      <select
-                        onChange={(e) =>
+                      <label>Nickname</label>
+                      <input
+                        type="text"
+                        value={pokemon.alias ?? ''}
+                        placeholder={pokemon.specieKey}
+                        maxLength={20}
+                        onInput={(e) =>
                           props.set((d) => {
-                            d.team[i()].targetMode = e.currentTarget.value;
+                            const v = e.currentTarget.value.trim();
+                            d.team[i()].alias = v || undefined;
                           })
                         }
-                      >
-                        <For each={TARGET_MODES}>
-                          {(t) => <option selected={t === pokemon.targetMode}>{t}</option>}
-                        </For>
-                      </select>
+                      />
                     </div>
+                  </div>
+                  <Show when={(() => { const e = pokedex()?.find(p => p.name.toLowerCase() === pokemon.specieKey); return e; })()}>
+                    {(entry) => (
+                      <div class="card-terrain">
+                        <For each={entry().tiles}>
+                          {(t) => (
+                            <span class="terrain-badge" style={{ background: TILE_COLORS[t] }}>
+                              {TILE_LABELS[t]}
+                            </span>
+                          )}
+                        </For>
+                      </div>
+                    )}
+                  </Show>
+                  <div class="field">
+                    <label>Target</label>
+                    <Show
+                      when={(() => {
+                        const e = pokedex()?.find(p => p.name.toLowerCase() === pokemon.specieKey);
+                        return e && (e.attackType === 'area' || e.attackType === 'aura') ? e.attackType : null;
+                      })()}
+                      fallback={
+                        <select
+                          onChange={(e) =>
+                            props.set((d) => {
+                              d.team[i()].targetMode = e.currentTarget.value;
+                            })
+                          }
+                        >
+                          <For each={TARGET_MODES.filter(m => m !== 'area' && m !== 'aura')}>
+                            {(t) => <option selected={t === pokemon.targetMode}>{t}</option>}
+                          </For>
+                        </select>
+                      }
+                    >
+                      {(lockedMode) => (
+                        <span class="target-locked" title={`Locked to "${lockedMode()}" by attack type`}>
+                          {lockedMode()} <span class="lock-icon">🔒</span>
+                        </span>
+                      )}
+                    </Show>
                   </div>
                   <div class="card-item">
                     <label>Item</label>

@@ -161,6 +161,10 @@ export const PlayerTab = (props: Props) => (
                       d.player.records[i] = Number(e.currentTarget.value);
                       d.player.stars = d.player.records.reduce((sum, r) => sum + r, 0);
                       const count = unlockedSlotCount(d.player.stars);
+                      // Keep teamSlots in sync so the game doesn't need to infer it.
+                      d.player.teamSlots = count;
+                      // Add empty placeholder cards in the editor for newly unlocked slots.
+                      // These are stripped from the export so the game never sees specieKey=''.
                       while (d.team.length < count) d.team.push(emptyPokemon());
                     })
                   }
