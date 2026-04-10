@@ -1,5 +1,6 @@
 import { For, Index } from 'solid-js';
 import type { SaveData } from '~/types/save';
+import { SLOT_THRESHOLDS, unlockedSlotCount, emptyPokemon } from '~/types/save';
 import './css/PlayerTab.css';
 
 interface Props {
@@ -50,15 +51,11 @@ export const PlayerTab = (props: Props) => (
           />
         </div>
         <div class="field">
-          <label>Stars</label>
+          <label>Stars <span class="label-hint">(from records)</span></label>
           <input
             type="number"
             value={props.store.data.player.stars}
-            onInput={(e) =>
-              props.set((d) => {
-                d.player.stars = Number(e.currentTarget.value);
-              })
-            }
+            readOnly
           />
         </div>
         <div class="field">
@@ -74,6 +71,19 @@ export const PlayerTab = (props: Props) => (
               })
             }
           />
+        </div>
+        <div class="slot-unlock-row">
+          <For each={SLOT_THRESHOLDS}>
+            {({ slot, stars }) => {
+              const unlocked = () => props.store.data.player.stars >= stars;
+              return (
+                <div class={`slot-badge${unlocked() ? ' unlocked' : ''}`}>
+                  <span class="slot-badge-label">Slot {slot}</span>
+                  <span class="slot-badge-status">{unlocked() ? 'Unlocked' : `${stars} ★`}</span>
+                </div>
+              );
+            }}
+          </For>
         </div>
         <div class="field">
           <label>Extra Gold</label>
@@ -132,7 +142,7 @@ export const PlayerTab = (props: Props) => (
       </div>
       <div>
         <h3 class="group-label">
-          Records <span class="label-hint">(highest wave per route)</span>
+          Records <span class="label-hint">(stars per route — sets total stars)</span>
         </h3>
         <div class="index-grid">
           <Index each={props.store.data.player.records}>
@@ -145,9 +155,13 @@ export const PlayerTab = (props: Props) => (
                   type="number"
                   value={val()}
                   min="0"
+                  max="100"
                   onInput={(e) =>
                     props.set((d) => {
                       d.player.records[i] = Number(e.currentTarget.value);
+                      d.player.stars = d.player.records.reduce((sum, r) => sum + r, 0);
+                      const count = unlockedSlotCount(d.player.stars);
+                      while (d.team.length < count) d.team.push(emptyPokemon());
                     })
                   }
                 />

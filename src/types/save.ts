@@ -137,6 +137,29 @@ export interface PokemonEntry {
   isMega: boolean;
 }
 
+/** Star thresholds that unlock extra team slots 7–10 (first 6 are always available) */
+export const SLOT_THRESHOLDS: { slot: number; stars: number }[] = [
+  { slot: 7, stars: 40 },
+  { slot: 8, stars: 160 },
+  { slot: 9, stars: 320 },
+  { slot: 10, stars: 540 },
+];
+
+/** Returns the number of team slots unlocked for a given star count (base 6 + extras) */
+export const unlockedSlotCount = (stars: number): number =>
+  6 + SLOT_THRESHOLDS.filter((t) => stars >= t.stars).length;
+
+/** A default empty Pokémon entry for newly unlocked team slots */
+export const emptyPokemon = (): PokemonEntry => ({
+  specieKey: '',
+  lvl: 1,
+  targetMode: 'first',
+  favorite: false,
+  isShiny: false,
+  hideShiny: false,
+  isMega: false,
+});
+
 /** Root save-file structure */
 export interface SaveData {
   new: boolean;

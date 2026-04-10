@@ -26,10 +26,11 @@ const loadSave = (data: SaveData = mockSaveData) => {
   fireEvent.click(screen.getByRole("button", { name: /parse data/i }));
 };
 
-/** Click Export Save and decode the resulting base64 */
+/** Open the export modal, click Download, and decode the resulting base64 */
 const exportAndDecode = (): SaveData => {
   lastExportedContent = "";
   fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+  fireEvent.click(screen.getByRole("button", { name: /download/i }));
   return decodeSaveData(lastExportedContent);
 };
 
@@ -69,6 +70,18 @@ describe("player edits round-trip", () => {
       target: { value: "99999" },
     });
     expect(exportAndDecode().player.gold).toBe(99999);
+  });
+
+  it("editing a record updates stars and is preserved in the export", () => {
+    loadSave();
+    // Records inputs have max="100"; health inputs have max="14"
+    const [firstRecordInput] = document.querySelectorAll<HTMLInputElement>('input[max="100"]');
+    fireEvent.input(firstRecordInput, { target: { value: "100" } });
+    const exported = exportAndDecode();
+    // stars = sum of all records: 100 + remaining fixture records
+    const expectedStars = [100, ...mockSaveData.player.records.slice(1)].reduce((a, b) => a + b, 0);
+    expect(exported.player.stars).toBe(expectedStars);
+    expect(exported.player.records[0]).toBe(100);
   });
 });
 
@@ -122,5 +135,44 @@ describe("page shell", () => {
     });
     fireEvent.click(screen.getByRole("button", { name: /parse data/i }));
     expect(screen.getByRole("alert")).toHaveTextContent(/parse failed/i);
+  });
+});
+
+// ─── Export modal ─────────────────────────────────────────────────────────────
+
+describe("export modal", () => {
+  it("opens when Export Save is clicked", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+    expect(screen.getByRole("dialog")).toBeInTheDocument();
+  });
+
+  it("shows backup and reload warnings", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+    expect(screen.getByText(/backup first/i)).toBeInTheDocument();
+    expect(screen.getByText(/game won't load/i)).toBeInTheDocument();
+  });
+
+  it("closes when Cancel is clicked", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+    fireEvent.click(screen.getByRole("button", { name: /cancel/i }));
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  it("closes when backdrop is clicked", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+    fireEvent.click(document.querySelector(".modal-backdrop")!);
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  it("downloads and closes when Download is clicked", () => {
+    loadSave();
+    fireEvent.click(screen.getByRole("button", { name: /export save/i }));
+    fireEvent.click(screen.getByRole("button", { name: /download/i }));
+    expect(lastExportedContent).not.toBe("");
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
   });
 });

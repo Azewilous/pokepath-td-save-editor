@@ -1,4 +1,4 @@
-import { Show } from 'solid-js';
+import { Show, createSignal } from 'solid-js';
 import { createStore, produce, reconcile } from 'solid-js/store';
 import type { SaveData } from '~/types/save';
 import { Navbar } from '~/components/layout/Navbar';
@@ -6,6 +6,7 @@ import { Hero } from '~/components/layout/Hero';
 import { Footer } from '~/components/layout/Footer';
 import { DataInterface } from '~/components/editor/DataInterface';
 import { SaveEditor } from '~/components/editor/SaveEditor';
+import { ExportModal } from '~/components/shared/ExportModal';
 
 const encodeBase64Save = (data: SaveData): string => {
   const bytes = new TextEncoder().encode(JSON.stringify(data));
@@ -14,17 +15,9 @@ const encodeBase64Save = (data: SaveData): string => {
   return btoa(binary);
 };
 
-const triggerDownload = (content: string, filename: string) => {
-  const url = URL.createObjectURL(new Blob([content], { type: 'text/plain' }));
-  const a = Object.assign(document.createElement('a'), { href: url, download: filename });
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-};
-
 export default () => {
   const [store, setStore] = createStore<{ data: SaveData | null }>({ data: null });
+  const [exportPayload, setExportPayload] = createSignal<string | null>(null);
 
   const set = (fn: (d: SaveData) => void) =>
     setStore(
@@ -37,7 +30,7 @@ export default () => {
 
   const handleExport = () => {
     if (!store.data) return;
-    triggerDownload(encodeBase64Save(store.data), `save-${Date.now()}.txt`);
+    setExportPayload(encodeBase64Save(store.data));
   };
 
   return (
@@ -48,6 +41,9 @@ export default () => {
         <DataInterface onParse={handleParse} />
         <Show when={store.data !== null}>
           <SaveEditor store={store as { data: SaveData }} set={set} onExport={handleExport} />
+        </Show>
+        <Show when={exportPayload() !== null}>
+          <ExportModal payload={exportPayload()!} onClose={() => setExportPayload(null)} />
         </Show>
       </main>
       <Footer />

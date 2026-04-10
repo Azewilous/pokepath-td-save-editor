@@ -1,3 +1,48 @@
+.slot-unlock-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.slot-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius);
+  background: var(--bg);
+  opacity: 0.5;
+  min-width: 72px;
+}
+
+.slot-badge.unlocked {
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.slot-badge-label {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.slot-badge.unlocked .slot-badge-label {
+  color: var(--accent-light);
+}
+
+.slot-badge-status {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.slot-badge.unlocked .slot-badge-status {
+  color: var(--text);
+}
+
 .index-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
