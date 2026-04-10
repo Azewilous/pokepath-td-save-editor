@@ -31,6 +31,7 @@ export const PlayerTab = (props: Props) => (
           <input
             type="number"
             value={props.store.data.player.portrait}
+            min="0"
             onInput={(e) =>
               props.set((d) => {
                 d.player.portrait = Number(e.currentTarget.value);
@@ -43,6 +44,7 @@ export const PlayerTab = (props: Props) => (
           <input
             type="number"
             value={props.store.data.player.gold}
+            min="0"
             onInput={(e) =>
               props.set((d) => {
                 d.player.gold = Number(e.currentTarget.value);
@@ -59,17 +61,11 @@ export const PlayerTab = (props: Props) => (
           />
         </div>
         <div class="field">
-          <label>Team Slots</label>
+          <label>Team Slots <span class="label-hint">(from records)</span></label>
           <input
             type="number"
             value={props.store.data.player.teamSlots}
-            min="6"
-            max="10"
-            onInput={(e) =>
-              props.set((d) => {
-                d.player.teamSlots = Number(e.currentTarget.value);
-              })
-            }
+            readOnly
           />
         </div>
         <div class="slot-unlock-row">
@@ -90,6 +86,7 @@ export const PlayerTab = (props: Props) => (
           <input
             type="number"
             value={props.store.data.player.extraGold}
+            min="0"
             onInput={(e) =>
               props.set((d) => {
                 d.player.extraGold = Number(e.currentTarget.value);
@@ -102,6 +99,7 @@ export const PlayerTab = (props: Props) => (
           <input
             type="number"
             value={props.store.data.player.ribbons}
+            min="0"
             onInput={(e) =>
               props.set((d) => {
                 d.player.ribbons = Number(e.currentTarget.value);

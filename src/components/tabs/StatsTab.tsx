@@ -38,6 +38,7 @@ export const StatsTab = (props: Props) => (
                 class="stat-input"
                 type="number"
                 value={props.store.data.player.stats[key]}
+                min="0"
                 onInput={(e) =>
                   props.set((d) => {
                     (d.player.stats as unknown as Record<string, number>)[key] = Number(
