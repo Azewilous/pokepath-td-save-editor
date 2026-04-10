@@ -10,7 +10,7 @@ export const mockSaveData: SaveData = {
     health: [14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14],
     records: [20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     ribbons: 3,
-    stars: 10,
+    stars: 20,
     teamSlots: 6,
     extraGold: 0,
     achievements: [
